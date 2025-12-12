@@ -14,7 +14,7 @@ const SlideDocument = () => {
         <div className="w-full">
             <div className="flex items-center justify-between mt-10">
                 <h2 className="text-2xl! text-main font-semibold">Featured Documents</h2>
-                <Button text="View all" className="mt-0!"/>
+                <Button text="View all" className="mt-0! bg-transparent! shadow-none! text-sm hover:underline duration-300 font-medium! px-0!"/>
             </div>
             <div className="mt-5 w-full">
                 <Swiper
@@ -25,12 +25,12 @@ const SlideDocument = () => {
                     autoplay={{ delay: 4000 }}
                 >
                     <SwiperSlide>
-                        <Link href={"/"} target="_blank" rel="noopener noreferrer">
+                        <Link href={"/"}>
                             <Document className="h-70 w-full mb-10"/>
                         </Link>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Link href={"/"} target="_blank" rel="noopener noreferrer">
+                        <Link href={"/"}>
                             <Document className="h-70 w-full mb-10"/>
                         </Link>
                     </SwiperSlide>

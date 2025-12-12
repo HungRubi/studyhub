@@ -47,7 +47,7 @@ export default function BestSellingDocuments() {
             <p className="text-orange-600 font-bold mt-2">{item.price}</p>
 
             <Link
-              href={`/document/${item.id}`}
+              href={`/docs/computer-version`}
               className="mt-4 inline-block bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition"
             >
               View Document

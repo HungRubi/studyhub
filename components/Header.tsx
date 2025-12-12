@@ -6,12 +6,10 @@ import Search from "./Search";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-import { FaShoppingCart } from "react-icons/fa";
-
 export default function Header() {
     const pathname = usePathname();
     return (
-        <header className="w-full py-5 bg-white">
+        <header className="sticky top-0 z-50 w-full py-5 bg-white/80 backdrop-blur-xl">
             <div className="container flex items-center justify-between mx-auto px-3">
                 <h1 className="font-bold text-main text-lg!">StudyHub</h1>
                 <Search />
@@ -35,9 +33,6 @@ export default function Header() {
                     }
                     
                     <div className="flex items-center gap-x-4">
-                        <div className="rounded-full w-10 h-10 bg-[#f3f3f3] flex items-center justify-center">
-                            <FaShoppingCart className="text-xl text-[#ff7b00] cursor-pointer"/>
-                        </div>
                         <Image src="/images/default.png" alt="User Profile" width={40} height={40} className="rounded-full cursor-pointer"/>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ const ListCategory = () => {
         <div className="w-full">
             <div className="flex items-center justify-between my-5">
                 <h2 className="text-2xl! text-main font-semibold">Objects</h2>
-                <Button text="View all" className="mt-0!"/>
+                <Button text="View all" className="mt-0! bg-transparent! shadow-none! text-sm hover:underline duration-300 font-medium! px-0!"/>
             </div>
             <div className="w-full flex items-center gap-5 flex-wrap">
                 <div className="w-[calc(50%-10px)]">
