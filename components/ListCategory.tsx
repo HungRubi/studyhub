@@ -1,13 +1,19 @@
-import Button from "./Button";
+import Link from "next/link";
 import Image from "next/image";
+import Wrapper from "./Wrapper";
 const ListCategory = () => {
     return (
         <div className="w-full">
             <div className="flex items-center justify-between my-5">
                 <h2 className="text-2xl! text-main font-semibold">Objects</h2>
-                <Button text="View all" className="mt-0! bg-transparent! shadow-none! text-sm hover:underline duration-300 font-medium! px-0!"/>
+                <Link 
+                    href={"/"} 
+                    className="mt-0! bg-transparent! shadow-none! text-sm! hover:underline duration-300 font-medium! px-0! text-main"
+                >
+                    View all
+                </Link>
             </div>
-            <div className="w-full flex items-center gap-5 flex-wrap">
+            <Wrapper className="w-full flex items-center gap-5 flex-wrap">
                 <div className="w-[calc(50%-10px)]">
                     <div className="w-full relative">
                         <Image
@@ -38,7 +44,7 @@ const ListCategory = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Wrapper>
         </div>
     )
 }

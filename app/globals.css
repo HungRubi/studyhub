@@ -36,3 +36,9 @@ body {
   color: var(--colormain);
   font-size: var(--textmain);
 }
+
+.bg-nav {
+  background: url('/images/bg_banner.png') no-repeat;
+  background-size: cover;
+
+}

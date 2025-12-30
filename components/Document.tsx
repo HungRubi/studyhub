@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 import { FC } from "react";
 import Link from "next/link";
@@ -10,7 +12,7 @@ const Document: FC<DocumentProps> = ({className}) => {
     return (
         <div className="w-full">
             <div className="w-full relative">
-                <Link href={`/documents/computer-version`}>
+                <Link href={`/docs/computer-version`}>
                     <Image
                         src={"/images/computer_version.jpg"}
                         alt="object"

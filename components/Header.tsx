@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <header className="sticky top-0 z-50 w-full py-5 bg-white/80 backdrop-blur-xl">
             <div className="container flex items-center justify-between mx-auto px-3">
-                <h1 className="font-bold text-main text-lg!">StudyHub</h1>
+                <Link href={"/"} className="font-bold text-main text-lg!">StudyHub</Link>
                 <Search />
                 <div className="flex items-center gap-x-10 font-medium">
                     {tabs.map((tab) => {

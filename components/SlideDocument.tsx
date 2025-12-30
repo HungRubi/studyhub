@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper/modules";
-import Link from "next/link";
 import Document from "./Document";
 
 const SlideDocument = () => {
@@ -25,14 +24,10 @@ const SlideDocument = () => {
                     autoplay={{ delay: 4000 }}
                 >
                     <SwiperSlide>
-                        <Link href={"/"}>
-                            <Document className="h-70 w-full mb-10"/>
-                        </Link>
+                        <Document className="h-70 w-full mb-10"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Link href={"/"}>
-                            <Document className="h-70 w-full mb-10"/>
-                        </Link>
+                        <Document className="h-70 w-full mb-10"/>
                     </SwiperSlide>
                 </Swiper>
                 
